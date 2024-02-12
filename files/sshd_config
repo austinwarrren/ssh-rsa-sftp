@@ -18,5 +18,9 @@ Subsystem sftp internal-sftp
 ForceCommand internal-sftp
 ChrootDirectory %h
 
+# Force clients to use ssh-rsa to connect
+HostKeyAlgorithms ssh-rsa
+PubkeyAcceptedKeyTypes ssh-rsa
+
 # Enable this for more logs
-#LogLevel VERBOSE
+LogLevel VERBOSE
