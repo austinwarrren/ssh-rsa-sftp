@@ -4,6 +4,11 @@
 
 ![OpenSSH logo](https://raw.githubusercontent.com/atmoz/sftp/master/openssh.png "Powered by OpenSSH")
 
+# How to build an image locally
+
+1. `docker build -t dwolla/ssh-rsa-sftp -f Dockerfile . `
+2. `docker run -i -p 2222:22 -t dwolla/ssh-rsa-sftp "user:pass:1001"`
+
 # Supported tags and respective `Dockerfile` links
 
 - [`debian`, `latest` (*Dockerfile*)](https://github.com/atmoz/sftp/blob/master/Dockerfile) ![Docker Image Size (debian)](https://img.shields.io/docker/image-size/atmoz/sftp/debian?label=debian&logo=debian&style=plastic)
